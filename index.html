@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A markdown previewer that renders markdown text into HTML as you type.">
+    <title>Markdown Previewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Markdown Previewer</h1>
+        <div class="container">
+            <div class="editor-section">
+                <h2>Editor</h2>
+                <textarea id="editor" placeholder="Type your markdown here..."></textarea>
+            </div>
+            <div class="preview-section">
+                <h2>Preview</h2>
+                <div id="preview"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Marked.js for parsing markdown -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.12/marked.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
